@@ -1,26 +1,26 @@
-// (1) We need to find a way to encapsulate our tests, so that we can see the results of all of them
-const { sum, subtract } = require("./math");
+const { sumAsync, subtractAsync } = require("./math");
 
-test("sum adds numbers", () => {
-	const result = sum(3, 7);
+// (1) But what about async functions? In this case we're changing the sum and substract function calls for their async versions
+// Notice how we refactor the test function to be on the async/await form
+test("sumAsync adds numbers asynchronously", async () => {
+	const result = await sumAsync(3, 7);
 	const expected = 10;
 	expect(result).toBe(expected);
 });
 
-test("subtract subtracts numbers", () => {
-	const result = subtract(7, 3);
+test("subtractAsync subtracts numbers asynchronously", async () => {
+	const result = await subtractAsync(7, 3);
 	const expected = 4;
 	expect(result).toBe(expected);
 });
 
-// (2) We're going to use this tests function which will receive a title and a callback as parameters
-function test(title, callback) {
+// (2) For such situations, we just have to refactor the test handler function to be of the async/await type
+// This will work equally for sync and async functions
+async function test(title, callback) {
 	try {
-		// (3) If the callback runs without errors, the test passes
-		callback();
+		await callback();
 		console.log(`✓ ${title}`);
 	} catch (error) {
-		// (4) Otherwise, it fails
 		console.error(`✕ ${title}`);
 		console.error(error);
 	}
