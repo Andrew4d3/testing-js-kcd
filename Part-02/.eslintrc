@@ -1,0 +1,14 @@
+{
+   "parserOptions": {
+      "ecmaVersion": 2018 // (1) The targeted ECMA version
+   },
+   "extends": [
+      "eslint:recommended" // (2) We can extends the rules from many sets available to install. This one in particular is installed by default
+   ],
+   "rules": {
+      "no-console": "off" // (3) Three levels, "off", "warn" and "error"
+   },
+   "env": {
+      "browser": true // (4) The JS environment we're using
+   }
+}
