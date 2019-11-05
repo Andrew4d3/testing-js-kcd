@@ -12,4 +12,6 @@ test("subtractAsync subtracts numbers asynchronously", async () => {
 	expect(result).toBe(expected);
 });
 
-// (1) Instead of having our test methods here, let's move it to a different file so that we can use it anywhere
+// (1) Now we have some basic idea of how a test framework works. We don't have to use our own implementation
+// Let's rename this file to simple.test.js and start using it by doing:
+// $ npx jest

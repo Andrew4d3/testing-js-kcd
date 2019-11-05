@@ -1,0 +1,12 @@
+{
+  "name": "testing-js-kcd",
+  "version": "1.0.0",
+  "description": "Personal Notes for Testing JS course by Kent C. Dodds",
+  "main": "none",
+  "repository": "https://github.com/Andrew4d3/testing-js-kcd.git",
+  "author": "Andrew4d3 <andrew4d3@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
