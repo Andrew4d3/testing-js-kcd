@@ -1,14 +1,12 @@
 {
    "parserOptions": {
-      "ecmaVersion": 2018 // (1) The targeted ECMA version
+      "ecmaVersion": 2018
    },
-   "extends": [
-      "eslint:recommended" // (2) We can extends the rules from many sets available to install. This one in particular is installed by default
-   ],
+   "extends": ["eslint:recommended", "eslint-config-prettier"], // (1) By including this extension, we avoid possible conflicts and overlaping issues of Eslint rules with Prettier rules
    "rules": {
-      "no-console": "off" // (3) Three levels, "off", "warn" and "error"
+      "no-console": "off"
    },
    "env": {
-      "browser": true // (4) The JS environment we're using
+      "browser": true
    }
 }
