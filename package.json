@@ -6,6 +6,12 @@
   "repository": "https://github.com/Andrew4d3/testing-js-kcd.git",
   "author": "Andrew4d3 <andrew4d3@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint src",
+    "format": "npm run prettier -- --write",
+    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
+    "validate": "npm run lint && npm run prettier -- --list-different"
+  },
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.5.0",
