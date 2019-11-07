@@ -1,6 +1,0 @@
-# (2) We can also create this prettier ignore file. So that we can ommit those files that we don't want to apply prettier to
-node_modules
-coverage
-dist
-build
-.build
