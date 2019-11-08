@@ -1,24 +1,25 @@
 {
-  "name": "testing-js-kcd",
-  "version": "1.0.0",
-  "description": "Personal Notes for Testing JS course by Kent C. Dodds",
-  "main": "none",
-  "repository": "https://github.com/Andrew4d3/testing-js-kcd.git",
-  "author": "Andrew4d3 <andrew4d3@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "lint": "eslint Part-02/src",
-    "format": "npm run prettier -- --write",
-    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
-    "validate": "npm run lint && npm run prettier -- --list-different",
-    "precommit": "npm run validate",
-    "test:part03": "jest Part-03/."
-  },
-  "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.5.0",
-    "husky": "^3.0.9",
-    "jest": "^24.9.0",
-    "prettier": "^1.18.2"
-  }
+   "name": "testing-js-kcd",
+   "version": "1.0.0",
+   "description": "Personal Notes for Testing JS course by Kent C. Dodds",
+   "main": "none",
+   "repository": "https://github.com/Andrew4d3/testing-js-kcd.git",
+   "author": "Andrew4d3 <andrew4d3@gmail.com>",
+   "license": "MIT",
+   "scripts": {
+      "lint": "eslint Part-02/src",
+      "format": "npm run prettier -- --write",
+      "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
+      "validate": "npm run lint && npm run prettier -- --list-different",
+      "precommit": "npm run validate",
+      "test:part03": "jest Part-03/.",
+      "test:part04": "jest Part-04/."
+   },
+   "devDependencies": {
+      "eslint": "^6.6.0",
+      "eslint-config-prettier": "^6.5.0",
+      "husky": "^3.0.9",
+      "jest": "^24.9.0",
+      "prettier": "^1.18.2"
+   }
 }
