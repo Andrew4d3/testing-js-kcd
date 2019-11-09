@@ -28,6 +28,7 @@ class AutoScalingText extends React.Component {
   render() {
     const scale = this.getScale();
 
+    // (1) As you can see here, the imported styles are assigning a CSS class to this container (autoScalingText)
     return (
       <div
         className={styles.autoScalingText}

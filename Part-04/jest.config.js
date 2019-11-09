@@ -1,7 +1,8 @@
 module.exports = {
   testEnvironment: "jest-environment-jsdom",
   moduleNameMapper: {
-    // (3) For such situations, we can configure a mocked that will be used anytime the Jest tests come across a CSS file
+    // (4) We can resolve this by using this dependency called identity-obj-proxy which will resolve any property reference we pass it
+    "\\.module\\.css$": "identity-obj-proxy",
     "\\.css$": require.resolve("./test/style-mock.js")
   }
 };
