@@ -1,5 +1,7 @@
-// (1) Testing in a node environment is not the same as testing in a browser environment
-// We can define here which test environment we want to apply
 module.exports = {
-  testEnvironment: "jest-environment-jsdom" // jsdom for browser and node for server
+  testEnvironment: "jest-environment-jsdom",
+  moduleNameMapper: {
+    // (3) For such situations, we can configure a mocked that will be used anytime the Jest tests come across a CSS file
+    "\\.css$": require.resolve("./test/style-mock.js")
+  }
 };

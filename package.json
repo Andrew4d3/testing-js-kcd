@@ -12,7 +12,7 @@
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
     "validate": "npm run lint && npm run prettier -- --list-different",
     "test:part03": "jest Part-03/.",
-    "test:part04": "jest Part-04/."
+    "test:part04": "jest --config=Part-04/jest.config.js Part-04/."
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.51",
@@ -21,6 +21,7 @@
     "@babel/plugin-syntax-dynamic-import": "7.0.0-beta.51",
     "@babel/preset-env": "^7.0.0-beta.51",
     "@babel/preset-react": "^7.0.0-beta.51",
+    "@testing-library/react": "^9.3.2",
     "babel-core": "7.0.0-bridge.0",
     "babel-loader": "^8.0.0-beta.4",
     "babel-plugin-emotion": "^9.2.4",
