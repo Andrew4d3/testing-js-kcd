@@ -1,43 +1,44 @@
 {
-  "name": "testing-js-kcd",
-  "version": "1.0.0",
-  "description": "Personal Notes for Testing JS course by Kent C. Dodds",
-  "main": "none",
-  "repository": "https://github.com/Andrew4d3/testing-js-kcd.git",
-  "author": "Andrew4d3 <andrew4d3@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "lint": "eslint Part-02/src",
-    "format": "npm run prettier -- --write",
-    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
-    "validate": "npm run lint && npm run prettier -- --list-different",
-    "test:part03": "jest Part-03/.",
-    "test:part04": "jest --config=Part-04/jest.config.js Part-04/."
-  },
-  "devDependencies": {
-    "@babel/core": "^7.0.0-beta.51",
-    "@babel/plugin-proposal-class-properties": "7.0.0-beta.51",
-    "@babel/plugin-proposal-object-rest-spread": "7.0.0-beta.51",
-    "@babel/plugin-syntax-dynamic-import": "7.0.0-beta.51",
-    "@babel/preset-env": "^7.0.0-beta.51",
-    "@babel/preset-react": "^7.0.0-beta.51",
-    "@testing-library/react": "^9.3.2",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-loader": "^8.0.0-beta.4",
-    "babel-plugin-emotion": "^9.2.4",
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.5.0",
-    "husky": "^3.0.9",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.9.0",
-    "prettier": "^1.18.2"
-  },
-  "dependencies": {
-    "emotion": "^10.0.23",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-emotion": "^9.2.4",
-    "react-loadable": "^5.4.0",
-    "react-point": "^3.0.1"
-  }
+   "name": "testing-js-kcd",
+   "version": "1.0.0",
+   "description": "Personal Notes for Testing JS course by Kent C. Dodds",
+   "main": "none",
+   "repository": "https://github.com/Andrew4d3/testing-js-kcd.git",
+   "author": "Andrew4d3 <andrew4d3@gmail.com>",
+   "license": "MIT",
+   "scripts": {
+      "lint": "eslint Part-02/src",
+      "format": "npm run prettier -- --write",
+      "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
+      "validate": "npm run lint && npm run prettier -- --list-different",
+      "test:part03": "jest Part-03/.",
+      "test:part04": "jest --config=Part-04/jest.config.js Part-04/."
+   },
+   "devDependencies": {
+      "@babel/core": "^7.0.0-beta.51",
+      "@babel/plugin-proposal-class-properties": "7.0.0-beta.51",
+      "@babel/plugin-proposal-object-rest-spread": "7.0.0-beta.51",
+      "@babel/plugin-syntax-dynamic-import": "7.0.0-beta.51",
+      "@babel/preset-env": "^7.0.0-beta.51",
+      "@babel/preset-react": "^7.0.0-beta.51",
+      "@testing-library/react": "^9.3.2",
+      "babel-core": "7.0.0-bridge.0",
+      "babel-loader": "^8.0.0-beta.4",
+      "babel-plugin-emotion": "^9.2.4",
+      "eslint": "^6.6.0",
+      "eslint-config-prettier": "^6.5.0",
+      "husky": "^3.0.9",
+      "identity-obj-proxy": "^3.0.0",
+      "jest": "^24.9.0",
+      "jest-emotion": "^10.0.17",
+      "prettier": "^1.18.2"
+   },
+   "dependencies": {
+      "emotion": "^10.0.23",
+      "react": "^16.4.1",
+      "react-dom": "^16.4.1",
+      "react-emotion": "^9.2.4",
+      "react-loadable": "^5.4.0",
+      "react-point": "^3.0.1"
+   }
 }
