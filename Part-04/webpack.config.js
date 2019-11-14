@@ -1,44 +1,45 @@
-const path = require("path");
+const path = require('path')
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    path: path.resolve("dist"),
-    filename: "bundle.js"
+    path: path.resolve('dist'),
+    filename: 'bundle.js',
   },
   resolve: {
-    modules: ["node_modules", path.join(__dirname, "src"), "shared"]
+    // (5) In order to resolve this issue, we need to include a new configuration into our jest environment, Exactly like this one:
+    modules: ['node_modules', path.join(__dirname, 'src'), 'shared'],
   },
   module: {
     rules: [
       {
         test: /\.css$/,
         exclude: /\.module\.css$/,
-        use: [{ loader: "style-loader" }, { loader: "css-loader" }]
+        use: [{loader: 'style-loader'}, {loader: 'css-loader'}],
       },
       {
         test: /\.module\.css$/,
         use: [
-          { loader: "style-loader" },
-          { loader: "css-loader", options: { modules: true, camelCase: true } }
-        ]
+          {loader: 'style-loader'},
+          {loader: 'css-loader', options: {modules: true, camelCase: true}},
+        ],
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: "babel-loader"
+        use: 'babel-loader',
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
-        use: "file-loader"
-      }
-    ]
-  }
-};
+        use: 'file-loader',
+      },
+    ],
+  },
+}
 
 if (process.env.WEBPACK_SERVE) {
-  module.exports.mode = "development";
+  module.exports.mode = 'development'
   module.exports.serve = {
-    content: path.join(__dirname, "./public")
-  };
+    content: path.join(__dirname, './public'),
+  }
 }
