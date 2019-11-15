@@ -179,6 +179,9 @@ class Calculator extends React.Component {
   }
 
   render() {
+    // (1) What if we want to debugg our tests? We can do it by setting the following command on our package.json:
+    // "test:debug:part04": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch  --config=Part-04/jest.config.js Part-04/."
+    debugger
     const {displayValue} = this.state
 
     const clearDisplay = displayValue !== '0'
