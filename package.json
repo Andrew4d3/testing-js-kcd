@@ -12,7 +12,7 @@
       "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
       "validate": "npm run lint && npm run prettier -- --list-different",
       "test:part03": "jest Part-03/.",
-      "test:part04": "jest --config=Part-04/jest.config.js Part-04/.",
+      "test:part04": "jest --config=Part-04/jest.config.js Part-04/. --coverage",
       "test:debug:part04": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch  --config=Part-04/jest.config.js Part-04/."
    },
    "devDependencies": {
